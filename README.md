@@ -1,8 +1,5 @@
-# flutter_navigator_example
+# Flutter page navigation and route example
 
-Flutter Navigator example
+Refer to the articles on [Flutter Academy](https://flutter-academy.com/) for details.
 
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+* [Introduction to Page Navigation and Route in Flutter](https://flutter-academy.com/introduction-page-navigation-route-flutter/)
