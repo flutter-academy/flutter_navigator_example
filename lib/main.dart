@@ -54,24 +54,18 @@ class MyHomePage extends StatelessWidget {
           children: <Widget>[
             RaisedButton(
               child: Text('Show simple route'),
-              onPressed: (() {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) {
-                  return Scaffold(
-                    appBar: AppBar(
-                      title: Text('Simple route'),
-                    ),
-                    body: Center(
-                      child: RaisedButton(
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                        child: Text('Return to main screen'),
-                      ),
-                    ),
-                  );
-                }));
-              }),
+              onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => Scaffold(
+                        appBar: AppBar(
+                          title: Text('Simple route'),
+                        ),
+                        body: Center(
+                          child: RaisedButton(
+                            onPressed: () => Navigator.pop(context),
+                            child: Text('Return to main screen'),
+                          ),
+                        ),
+                      ))),
             ),
             RaisedButton(
               child: Text('Color selector example'),
